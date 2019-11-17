@@ -17,7 +17,6 @@ if($cek > 0){
 	$r = mysqli_fetch_assoc($data);
 	$_SESSION['id'] = $r['id'];
 	$_SESSION['username'] = $r['username'];
-    // $_SESSION['username'] = $username;
     $_SESSION['status'] = "login";
     header("location:../home/siswa.php");
 }else{
